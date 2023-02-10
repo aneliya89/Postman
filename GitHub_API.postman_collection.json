@@ -39,6 +39,21 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "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",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "aneliya89",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"body": {
@@ -96,7 +111,7 @@
 									"basic": [
 										{
 											"key": "password",
-											"value": "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",
+											"value": "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",
 											"type": "string"
 										},
 										{
@@ -162,7 +177,7 @@
 									"basic": [
 										{
 											"key": "password",
-											"value": "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",
+											"value": "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",
 											"type": "string"
 										},
 										{
@@ -200,41 +215,6 @@
 								}
 							},
 							"response": []
-						},
-						{
-							"name": "https://docs.github.com/rest",
-							"request": {
-								"auth": {
-									"type": "basic",
-									"basic": [
-										{
-											"key": "password",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "username",
-											"value": "aneliya89",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://docs.github.com/rest",
-									"protocol": "https",
-									"host": [
-										"docs",
-										"github",
-										"com"
-									],
-									"path": [
-										"rest"
-									]
-								}
-							},
-							"response": []
 						}
 					]
 				},
@@ -266,7 +246,7 @@
 									"basic": [
 										{
 											"key": "password",
-											"value": "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",
+											"value": "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",
 											"type": "string"
 										},
 										{
@@ -313,7 +293,7 @@
 									"basic": [
 										{
 											"key": "password",
-											"value": "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",
+											"value": "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",
 											"type": "string"
 										},
 										{
@@ -360,7 +340,7 @@
 									"basic": [
 										{
 											"key": "password",
-											"value": "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",
+											"value": "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",
 											"type": "string"
 										},
 										{
@@ -408,7 +388,7 @@
 									"basic": [
 										{
 											"key": "password",
-											"value": "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",
+											"value": "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",
 											"type": "string"
 										},
 										{
@@ -448,11 +428,11 @@
 											"    pm.response.to.have.status(200);\r",
 											"});\r",
 											"\r",
-											"pm.test(\"Check issue number and title\", function(){\r",
-											"    let body = pm.response.json();\r",
+											"pm.test(\"Check repo name\", function(){\r",
+											"    const body = pm.response.json(); \r",
 											"\r",
-											"pm.expect(body.number, \"Number property\").greaterThan(0);\r",
-											"pm.expect(body.title, \"Title property\").equal(\"issue from POSTMAN 3\");\r",
+											"pm.expect(body.name, \"Name property\").equals(\"Postman\");\r",
+											"\r",
 											"\r",
 											"})"
 										],
@@ -469,7 +449,7 @@
 									"basic": [
 										{
 											"key": "password",
-											"value": "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",
+											"value": "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",
 											"type": "string"
 										},
 										{
